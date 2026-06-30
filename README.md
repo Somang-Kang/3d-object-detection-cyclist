@@ -64,7 +64,7 @@ LiDAR와 Camera 정보를 함께 활용하는 **BEVFusion 기반 3D Object Detec
 # Setup
 #### 1. Dataset Preparation  
 
-과제에서는 **KITTI 데이터셋 기반 Cyclist Detection**을 요구하였으나, **BEVFusion의 공식 Pretrained 모델이 nuScenes 데이터셋 기반으로 제공**되며, 제한된 저장공간과 개발 기간을 고려하여 **nuScenes-mini Dataset**을 사용하였다.
+과제에서는 **KITTI 데이터셋 기반 Cyclist Detection**을 요구하였으나, **BEVFusion의 공식 Pretrained 모델이 nuScenes 데이터셋 기반으로 제공**되며, 제한된 저장공간과 개발 기간을 고려하여 🔗[**nuScenes-mini Dataset**](https://www.nuscenes.org/download)을 사용하였다.
 
 다운로드 후 다음과 같은 구조로 배치한다.
 
@@ -100,7 +100,7 @@ data/
 
 #### 3. Pretrained model
 
-LiDAR-Camera Fusion 3D Object Detection 모델은 **nuScenes Dataset으로 학습된 BEVFusion Pretrained 모델**을 활용하였다.
+LiDAR-Camera Fusion 3D Object Detection 모델은 nuScenes Dataset으로 학습된 🔗[BEVFusion Pretrained 모델](https://www.dropbox.com/scl/fi/ulaz9z4wdwtypjhx7xdi3/bevfusion-det.pth?rlkey=ovusfi2rchjub5oafogou255v&dl=1)을 활용하였다.
 직접 모델을 재학습하기보다 Pretrained Weight를 활용하여 LiDAR-Camera Fusion Detection Pipeline 구현에 집중하였다.
 
 
@@ -146,7 +146,7 @@ nuScenes dataset은 자율주행 차량에서 수집한 대표적인 Multi-Senso
 
 
 #### [Data Analysis]
-데이터 분석은 아래 경로의 notebook을 통하여 수행하였다.
+데이터 분석은 🔗[data_analysis_nuscenes.ipynb](tools/data_analysis_nuscenes.ipynb)에서 수행하였다.
 
 ```text
 tools/data_analysis_nuscenes.ipynb
